@@ -1,8 +1,8 @@
-import express from "express";
-import mongoose from "mongoose";
-import blogRouter from "../routes/blog-routes";
-import router from "../routes/user-routes";
-import cors from "cors";
+const express = require ("express");
+const mongoose = require ("mongoose");
+const blogRouter = require ("./routes/blog-routes");
+const router = require ("./routes/user-routes");
+const cors = require ("cors");
 
 console.log(__dirname);
 
