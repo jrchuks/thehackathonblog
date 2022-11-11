@@ -27,7 +27,7 @@ const AddBlog = () => {
 
   const sendRequest = async() => {
     const res = await axios
-      .post(`http://localhost:7000/api/blog/add`, {
+      .post(`https://thehackathonblog.onrender.com/api/blog/add`, {
       title:inputs.title,
       description:inputs.description,
       image:inputs.imageURL,

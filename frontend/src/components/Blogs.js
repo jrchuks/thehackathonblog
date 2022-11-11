@@ -8,7 +8,7 @@ const Blogs = () => {
 
     const sendRequest = async () => {
         const res = await axios
-        .get("http://localhost:7000/api/blog")
+        .get("https://thehackathonblog.onrender.com/api/blog")
         .catch(err=>console.log(err));
         const data = await res.data;
         return data;

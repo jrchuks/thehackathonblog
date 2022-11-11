@@ -8,7 +8,7 @@ const UserBlogs = () => {
 
   const id = localStorage.getItem("userId");
   const sendRequest = async() => {
-    const res = await axios.get(`http://localhost:7000/api/blog/user/${id}`)
+    const res = await axios.get(`https://thehackathonblog.onrender.com/api/blog/user/${id}`)
     .catch(err=>console.log(err))
     const data = await res.data;
     return data;
