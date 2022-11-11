@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
-import blogRouter from "./routes/blog-routes";
-import router from "./routes/user-routes";
+import blogRouter from "../routes/blog-routes";
+import router from "../routes/user-routes";
 import cors from "cors";
 
 console.log(__dirname);
