@@ -3,8 +3,7 @@ const mongoose = require ("mongoose");
 const blogRouter = require ("./routes/blog-routes");
 const router = require ("./routes/user-routes");
 const cors = require ("cors");
-
-console.log(__dirname);
+const port = process.env.PORT || 7000
 
 const app = express();
 
@@ -20,7 +19,7 @@ mongoose
     .connect(
         "mongodb+srv://jrchuks:THISISarea51@verbose.t3zmev3.mongodb.net/Verbose?retryWrites=true&w=majority"
     )
-    .then(()=>app.listen(7000))
+    .then(()=>app.listen(port, console.log("Server running on port", port)))
     .then(()=>
         console.log("Connected to database and listening to localhost 7000")
     )
