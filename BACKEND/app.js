@@ -4,7 +4,7 @@ import blogRouter from "./routes/blog-routes";
 import router from "./routes/user-routes";
 import cors from "cors";
 
-
+console.log(__dirname);
 
 const app = express();
 
